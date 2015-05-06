@@ -6,7 +6,8 @@ This project is a bit of an experiment and involves 3 different LRU Cache implem
 **Observations**:
 All three LRU Caches have the same tests. I ran some tests for scale with a capacity of 5 000 000 elements in the cache and added an additional 500 002 elements. Obviously, the min heap has a Big O(log n) for inserts, updates and deletes, so it is much slower than the OrderedDict, which has a Big O(1). That said, the min heap is actually slightly faster until you reach the cache's capacity.
 
-Table for a 5 000 000 capacity cache
+**Table for a 5 000 000 capacity cache**
+
 |  Number of inserted Elements  |  Min Heap    |  OrderedDict  |  MyOrderedDict  |
 |:-----------------------------:|:------------:|:-------------:|:---------------:|
 | 5 000 000                     |  47.626s     |  52.375s      |  59.921s        |
