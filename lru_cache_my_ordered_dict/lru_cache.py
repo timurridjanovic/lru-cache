@@ -155,7 +155,6 @@ class LRUCache(object):
     def get_dict(self):
         return self._cache_dict
 
-
 lru_cache = LRUCache(3)
 
 lru_cache.set("user1", "teme")
